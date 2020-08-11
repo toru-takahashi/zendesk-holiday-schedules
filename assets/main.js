@@ -36,7 +36,6 @@ function initClient() {
       authorizeButton.onclick = handleAuthClick;
       signoutButton.onclick = handleSignoutClick;
     }, function(response) {
-      console.log(response);
       let resultMessage = document.getElementById('result_message');
       let textContent;
       if (typeof response.details === "undefined") {
@@ -62,8 +61,8 @@ function updateSigninStatus(isSignedIn) {
       function(response) {
         listSchedules(response.schedules)
       },
-      function(error) {
-        console.error(error.responseText);
+      function(response) {
+        document.getElementById('result_message').textContent(response.responseText);
       }
     );
   } else {
@@ -111,7 +110,6 @@ function createScheduleEvent(event, scheduleId) {
       let textContent = document.createTextNode(event.summary + ' at '+  event.start.date +' was registered.\n');
       resultMessage.appendChild(textContent);
     }, function(error) {
-      console.log(error.responseText);
       let textContent = document.createTextNode(event.summary + 'failed to register a holiday between ' + event.start.date +' and '+ end_date + '.\n');
       resultMessage.appendChild(textContent);
     });
@@ -146,11 +144,10 @@ function listExistingHolidays(scheduleId, events) {
         });
 
       } else {
-        let textContent = document.createTextNode("All Events have been already registed. Same names and start date exist at Holidays.\n");
-        resultMessage.appendChild(textContent);
+        document.getElementById('result_message').textContent('All Events have been already registed. Same names and start date exist at Holidays.\n');
       }
-    }, function(error) {
-      console.error(error.responseText);
+    }, function(response) {
+      document.getElementById('result_message').textContent(response.error.status + ": " + response.error.message);
     }
   );
 }
@@ -171,10 +168,10 @@ function listUpcomingEvents(calendarId, scheduleId) {
     if (events.length > 0) {
       listExistingHolidays(scheduleId, events);
     } else {
-      console.warn("No Upcoming Request");
+      document.getElementById('result_message').textContent('No Upcoming Request\n');
     }
   }, function(error) {
-    console.error(error.responseText);
+    document.getElementById('result_message').textContent(response.error.status + ": " + response.error.message);
   });
 }
 
@@ -194,7 +191,7 @@ function handleImportCalenderClick(event) {
   let calSelect = document.getElementById('calSelect');
   let schedSelect = document.getElementById('schedSelect');
   if (calSelect.options.length == 0 && schedSelect.options.length == 0) {
-    console.log("No available schedules or No available calenders");
+    document.getElementById('result_message').textContent('No available schedules or No available calenders\n');
     return;
   }
   let calender = calSelect.options[calSelect.selectedIndex];
@@ -238,7 +235,6 @@ function listCalenders() {
       appendCalenders(availableCals);
     } else {
       document.getElementById('result_message').textContent('No available calenders found.\n');
-      console.log(calenders)
     }
   });
 }
@@ -257,6 +253,5 @@ function listSchedules(schedules) {
     });
   } else {
     document.getElementById('result_message').textContent('No available schedules found. Please create a new schedule.\n');
-    console.log(schedules)
   }
 }
