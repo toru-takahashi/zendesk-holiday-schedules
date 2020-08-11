@@ -12,6 +12,7 @@
       "top_bar": "assets/iframe.html"
     }
   },
+  "domainWhitelist": ["content.googleapis.com"],
   "parameters": [
     {
       "name": "google_oauth_client_id",
@@ -19,8 +20,8 @@
       "required": true
     },
     {
-      "name": "google_oauth_api_key",
-      "type": "password",
+      "name": "google_oauth_api",
+      "type": "text",
       "required": true
     }
   ],

@@ -22,7 +22,7 @@ function handleClientLoad() {
 function initClient() {
   client.metadata().then(function(metadata) {
     gapi.client.init({
-      apiKey: metadata.settings.google_oauth_api_key,
+      apiKey: metadata.settings.google_oauth_api,
       clientId: metadata.settings.google_oauth_client_id,
       discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
       scope: "https://www.googleapis.com/auth/calendar.readonly"

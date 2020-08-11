@@ -8,7 +8,7 @@
       "google_oauth_client_id": {
         "label": "Your OAuth2 Google Client ID"
       },
-      "google_oauth_api_key": {
+      "google_oauth_api": {
         "label": "Your OAuth2 Google API KEY"
       }
     }
