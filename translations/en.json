@@ -1,0 +1,16 @@
+{
+  "app": {
+    "name": "Holiday Schedules",
+    "short_description": "Import Holidays from your Google Calender to Holidays in Zendesk Schedules",
+    "long_description": "Managing your holidays in Zendesk is useful for auto-response and KPI measurement.\nThis app assist to register Holidays from your Google Calender to Holidays in Zendesk Schedules automatically.",
+    "installation_instructions": "Follow this page - https://github.com/toru-takahashi/zendesk-holiday-schedules",
+    "parameters": {
+      "google_oauth_client_id": {
+        "label": "Your OAuth2 Google Client ID"
+      },
+      "google_oauth_api_key": {
+        "label": "Your OAuth2 Google API KEY"
+      }
+    }
+  }
+}

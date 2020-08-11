@@ -1,0 +1,29 @@
+{
+  "name": "Holiday Schedules",
+  "author": {
+    "name": "Toru Takahashi",
+    "email": "torutakahashi.ayashi+zendesk@gmail.com",
+    "url": "https://github.com/toru-takahashi"
+  },
+  "defaultLocale": "en",
+  "private": false,
+  "location": {
+    "support": {
+      "top_bar": "assets/iframe.html"
+    }
+  },
+  "parameters": [
+    {
+      "name": "google_oauth_client_id",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "google_oauth_api_key",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "version": "1.0",
+  "frameworkVersion": "2.0"
+}
