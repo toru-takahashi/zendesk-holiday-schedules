@@ -12,7 +12,6 @@
       "top_bar": "assets/iframe.html"
     }
   },
-  "domainWhitelist": ["content.googleapis.com"],
   "parameters": [
     {
       "name": "google_oauth_client_id",
