@@ -12,29 +12,29 @@ In order to use this Zendesk App, you need to activate the Google Calender API i
 
 2. Set an arbitrary project name.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/3280bcae2548f00ecdce2a2482527235.png)](https://treasure-data.gyazo.com/3280bcae2548f00ecdce2a2482527235)
+<img src="https://t.gyazo.com/teams/treasure-data/3280bcae2548f00ecdce2a2482527235.png" width="320px">
 
 3. Copy the Client ID. Use it to set up this app.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/88e0abce2405c20a03e281653c24414f.png)](https://treasure-data.gyazo.com/88e0abce2405c20a03e281653c24414f)
+<img src="https://t.gyazo.com/teams/treasure-data/88e0abce2405c20a03e281653c24414f.png" width="320px">
 
 4. Access Google's [Developer Console](https://console.cloud.google.com/apis/credentials) and select the project you created above.
 
 5. Select Create Credentials from Credentials and create an API key.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/be8cd8f0406c9e4f7c299734f4d63c4a.png)](https://treasure-data.gyazo.com/be8cd8f0406c9e4f7c299734f4d63c4a)
+<img src="https://t.gyazo.com/teams/treasure-data/be8cd8f0406c9e4f7c299734f4d63c4a.png" width="320px">
 
 6. Save the created API key. This is also used in this app.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/b31710729f4fb0af7d3d6108124c6492.png)](https://treasure-data.gyazo.com/b31710729f4fb0af7d3d6108124c6492)
+<img src="https://t.gyazo.com/teams/treasure-data/b31710729f4fb0af7d3d6108124c6492.png" width="320px">
 
 7. Enable the created API key to be used only by Google Calender API.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/5a22b1dd594e36317daedbab2ff6d584.png)](https://treasure-data.gyazo.com/5a22b1dd594e36317daedbab2ff6d584)
+<img src="https://t.gyazo.com/teams/treasure-data/5a22b1dd594e36317daedbab2ff6d584.png" width="320px">
 
 8. Now you are ready to configure the app. You have one more step after installation, so let's bring up the configuration screen for the ID you just created in OAuth 2.0 Client ID in the Google Developer Console. You need to set the `approved source of JavaScript generation` setting after the app is launched.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/b41c7f0e0040bba3b30cdc99600e2fae.png)](https://treasure-data.gyazo.com/b41c7f0e0040bba3b30cdc99600e2fae)
+<img src="https://t.gyazo.com/teams/treasure-data/b41c7f0e0040bba3b30cdc99600e2fae.png" width="320px">
 
 9. set the Client ID and API key you saved during installation. When the first time you start the app, you will see the following message.
 
@@ -42,20 +42,19 @@ In order to use this Zendesk App, you need to activate the Google Calender API i
 Not a valid origin for the client: https://xxxxx.apps.zdusercontent.com has not been whitelisted for client ID xxxxxx-xxxxx.apps. Please go to https://console.developers.google.com/ and whitelist this origin for your project's client ID.
 ````
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/e071d3a78f8a8f475641b602d69fba0f.png)](https://treasure-data.gyazo.com/e071d3a78f8a8f475641b602d69fba0f)
+<img src="https://t.gyazo.com/teams/treasure-data/e071d3a78f8a8f475641b602d69fba0f.png" width="320px">
 
 
 10. Once you have completed your settings and refreshed your browser, the message will disappear (it may take a while). Then press the Autherize button and specify the calendar account you want to import in Google SSO.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/2aa41247cc958bcca4e1111bb87d0150.png)](https://treasure-data.gyazo.com/2aa41247cc958bcca4e1111bb87d0150)
-
+<img src="https://t.gyazo.com/teams/treasure-data/2aa41247cc958bcca4e1111bb87d0150.png" width="320px">
 
 11. you may see a Google Warning, but ignore it and go to zdusercontent.com (unsafe) to grant permission to load Google Calender.
 
 12. After authentication, you can see the list of Schedules in Zendesk and the list of holidays you have added in the other calendars in Google Calender, set the calendars you want to import and the calendars you want to import, and click Import.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/47986f3e14bf0c121e948a4e976b2f70.png)](https://treasure-data.gyazo.com/47986f3e14bf0c121e948a4e976b2f70)
+<img src="https://t.gyazo.com/teams/treasure-data/47986f3e14bf0c121e948a4e976b2f70.png" width="320px">
 
 13. Confirm that the holiday has been added to Schedules.
 
-[![Image from Gyazo](https://t.gyazo.com/teams/treasure-data/5b08e42a6380b6c9b3394e9d2e81d37e.png)](https://treasure-data.gyazo.com/5b08e42a6380b6c9b3394e9d2e81d37e)
+<img src="https://t.gyazo.com/teams/treasure-data/5b08e42a6380b6c9b3394e9d2e81d37e.png" width="320px">
